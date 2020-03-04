@@ -386,7 +386,7 @@ h6, .h6 { font-family: 'Open Sans', sans-serif; }
 
 		.pattern-overlay 
 		{ 
-			/* background: url(../media/images/pattern.png) repeat;  */
+			background: url('/assets/pattern.png') repeat; 
 			opacity: 0.8;
 		}
 
@@ -417,7 +417,7 @@ h6, .h6 { font-family: 'Open Sans', sans-serif; }
 	        transition: all 0.35s ease-in-out;
 }
 
-/* .plus-icon { background: url(../media/images/plus.png) no-repeat; } */
+.plus-icon { background: url('/assets/plus.png') no-repeat; }
 
 .plus-icon-small
 {
