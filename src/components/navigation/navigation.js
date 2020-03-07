@@ -1,4 +1,6 @@
 import React from 'react';
+import * as Scroll from 'react-scroll';
+let Link = Scroll.Link;
 
 const Navigation = () => {
   return (
@@ -11,10 +13,10 @@ const Navigation = () => {
             <div className="navbar-header">
               <div>
 
-                <a href="#contact" className="btn btn-hire btn--main-inverted">
+                <Link className="btn btn-hire btn--main-inverted" to="contact" spy={true} smooth={true}>
                   <i className="fa fa-briefcase"></i>
                   <span>hire me</span>
-                </a>
+                </Link>
 
                 <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
                   <span className="sr-only">Toggle navigation</span>
@@ -30,46 +32,46 @@ const Navigation = () => {
               <div className="navbar-cell">
               <ul className="nav navbar-nav navbar-right text-uppercase bold small">
                 <li>
-                  <a href="#home">
+                  <Link activeClass="mPS2id-highlight" to="home" spy={true} smooth={true}>
                     <i className="fa fa-home fa-fw"></i>
                     <span>home</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#profile">
+                  <Link activeClass="mPS2id-highlight" to="profile" spy={true} smooth={true}>
                     <i className="fa fa-female fa-fw"></i>
                     <span>profile</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#resume">
+                  <Link activeClass="mPS2id-highlight" to="resume" spy={true} smooth={true}>
                     <i className="fa fa-book fa-fw"></i>
                     <span>resume</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#skills">
+                  <Link activeClass="mPS2id-highlight" to="skills" spy={true} smooth={true}>
                     <i className="fa fa-pie-chart fa-fw"></i>
                     <span>skills</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#services">
+                  <Link activeClass="mPS2id-highlight" to="services" spy={true} smooth={true}>
                     <i className="fa fa-cog fa-fw"></i>
                     <span>services</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#portfolio">
-                    <i className="fa fa-briefcase fa-fw"></i>
+                  <Link activeClass="mPS2id-highlight" to="work" spy={true} smooth={true}>
+                  <i className="fa fa-briefcase fa-fw"></i>
                     <span>work</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact">
+                  <Link activeClass="mPS2id-highlight" to="contact" spy={true} smooth={true}>
                     <i className="fa fa-envelope fa-fw"></i>
                     <span>contact</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
               </div>

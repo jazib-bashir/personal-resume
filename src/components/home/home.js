@@ -1,5 +1,7 @@
 import React from 'react';
+import * as Scroll from 'react-scroll';
 import useWindowDimensions from '../../helpers/getWindowDimensions';
+let Link = Scroll.Link;
 
 const Home = () => {
     return (
@@ -37,12 +39,14 @@ const Home = () => {
 										</a>
 									</li>
 								</ul>
-								<div class="rings">
-									<span>scroll</span>
-									<div class="ring ring-1"></div>
-									<div class="ring ring-2"></div>
-									<div class="ring ring-3"></div>
-								</div>
+								<Link to="profile" spy={true} smooth={true}>
+									<div class="rings">
+										<span style={{color: "#ffffff"}}>scroll</span>
+										<div class="ring ring-1"></div>
+										<div class="ring ring-2"></div>
+										<div class="ring ring-3"></div>
+									</div>
+                </Link>
 							</div>
 						</div>
 					</div>

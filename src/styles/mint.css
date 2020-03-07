@@ -453,7 +453,7 @@ select:focus,
 @media (min-width: 992px) 
 {
 	.navbar .navbar-nav > li > a:hover,
-	.navbar .navbar-nav > li > a.mPS2id-highlight { border-color: #48cfae; }
+	.navbar .navbar-nav > li > a.mPS2id-highlight { cursor: pointer; border-color: #48cfae; }
 }
 
 /* ========================================= */
